@@ -1,0 +1,33 @@
+.section_descriptions{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--section-overlay);
+    padding: 1 rem;
+    border-radius: .4rem;
+}
+.description_card-icon{
+    width:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card h2{
+    font-size: 1.5rem;
+}
+.description_card-icon>small{
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:1024px){
+    .section_descriptions{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
